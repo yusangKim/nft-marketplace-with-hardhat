@@ -8,10 +8,16 @@ module.exports = {
       chainId: 1337,
     },
     //  unused configuration commented out for now
-    //  mumbai: {
-    //    url: "https://rpc-mumbai.maticvigil.com",
-    //    accounts: [process.env.privateKey]
-    //  }
+    mumbai: {
+      url: "https://rpc-mumbai.maticvigil.com",
+      accounts: [process.env.privateKey],
+    },
+    matic: {
+      // Infura
+      // url: `https://polygon-mainnet.infura.io/v3/${infuraId}`,
+      url: "https://rpc-mainnet.maticvigil.com",
+      accounts: [process.env.privateKey],
+    },
   },
   solidity: {
     version: "0.8.4",
